@@ -959,31 +959,6 @@ if __name__ == '__main__':
     combine_mel = False
     # mode_model = "vqvae"
     assert mode in ["eval", "short", "long", "eval_vq"]
-    condition_mode = False
 
-    ckpt_path = 'output/train_diffusion_ted_decoder/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_ted_v2/pose_diffusion_checkpoint_300.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion/pose_diffusion_checkpoint_350.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_low_lr/pose_diffusion_checkpoint_400.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_low_lr_decoder/pose_diffusion_checkpoint_400.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_beat_combine/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = "/home/tiger/nfs/workspace/DiffGesture/output/train_ted_latent_diffusion/pose_diffusion_checkpoint_150.bin"
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_low_lr/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_vqvae_with_val/pose_diffusion_checkpoint_best.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_ted_v2/pose_diffusion_checkpoint_300.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_vqvae_with_val_fixed_no_decoder/pose_diffusion_checkpoint_best.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_vqvae_with_val_fixed_no_encoder/pose_diffusion_checkpoint_best.bin'#4
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_vqvae_expressive_with_val_fixed_RESETonly_v2_lowlr/pose_diffusion_checkpoint_best.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_bestvq_scheduler/pose_diffusion_checkpoint_499.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion_bestvq/pose_diffusion_checkpoint_250.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_latent_diffusion/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_ted_vqvae_with_val_fixed/pose_diffusion_checkpoint_best.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_vqvae_cond_bestvq_v2/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_ted_v2/pose_diffusion_checkpoint_495.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/fixed_paper_vqvae_ted_fixed/pose_diffusion_checkpoint_best.bin'
-
-    ckpt_path = '/data/longbinji/DiffGesture/output/updated_paper_vqvae_ted_fixed/pose_diffusion_checkpoint_350.bin'
-    # ckpt_path = '/data/longbinji/DiffGesture/output/updated_paper_vqvae_ted_fixed/pose_diffusion_checkpoint_best.bin'
     ckpt_path = '/data/longbinji/checkpoints_c2g2_best/ted/paper_train_ted_vqvae_with_val_fixed/pose_diffusion_checkpoint_best.bin' 
-    ckpt_path = '/data/longbinji/checkpoints_c2g2_best/ted/paper_train_ted_latent_diffusion_bestvq/pose_diffusion_checkpoint_250.bin'
     main(mode, ckpt_path)
