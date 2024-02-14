@@ -78,7 +78,7 @@ python scripts/test_expressive.py long False(/True) True
 ```
 
 ## Generate co-speech keypoints on local images given 4 frames of seed gesture and 1 frame identity reference. 
-Required folder structure is shown in demos/data/clip1.
+Required folder structure is shown in demos/clip1.
 Current implementation requires 4 frames for both seed gesture and speaker identity, will be fixed later.
 ```
 python scripts/generate_visual.py # seed_folder # identity folder
