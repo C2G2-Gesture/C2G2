@@ -43,10 +43,10 @@ python scripts/train_expressive_latent.py --config=config/pose_diffusion_express
 # Finetune SRD to generate real-length speaker identity
 python scripts/train_vqvae_expressive_cond.py --config=config/pose_diffusion_expressive.yml
 ```
-### Remember to change the vqvae_weight path in config file
+#### Remember to change the vqvae_weight path in config file
 
 ## Inference(Normalized/real-identity)
-### The third and fourth term controls whether to use real identity and whether use re-painting, make sure a SRD weight is loaded with correct path.
+#### The third and fourth term controls whether to use real identity and whether use re-painting, make sure a SRD weight is loaded with correct path.
 ```
 # metrics evaluation (Normalized/real-length)
 python scripts/test_expressive.py eval latent_diffusion False(/True) False
@@ -101,4 +101,4 @@ If you find our work useful, please kindly cite as:
 ```
 
 ## Acknowledgement
-* The codebase is developed based on [Gesture Generation from Trimodal Context](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context) of Yoon et al, [HA2G](https://github.com/alvinliu0/HA2G) of Liu et al, and [Diffgesture](https://github.com/luost26/diffusion-point-cloud) of Luo et at.
+* The codebase is developed based on [Gesture Generation from Trimodal Context](https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context) of Yoon et al, [HA2G](https://github.com/alvinliu0/HA2G) of Liu et al, and [Diffgesture](https://github.com/Advocate99/DiffGesture) of Zhu et at.
