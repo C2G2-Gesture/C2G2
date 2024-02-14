@@ -1265,46 +1265,6 @@ if __name__ == '__main__':
     direct_rl = False
     # mode_model = 'cond_vqvae'
     assert mode in ["eval", "short", "long", "eval_vq"]
-    
-
-    ckpt_path = 'train_diffusion_expressive/pose_diffusion_checkpoint_499.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_expressive_v2/pose_diffusion_checkpoint_300.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_latent_diffusion_300_vqvae_v2/pose_diffusion_checkpoint_499.bin' # 300 best
-    # # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_expressive_latent_diffusion/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_expressive_latent_wo_decoder/pose_diffusion_checkpoint_480.bin'
-    # # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_expressive_latent_diffusion/pose_diffusion_checkpoint_150.bin'
-    
-    # # latent diffusion without decoder
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_expressive_latent_low_lr/pose_diffusion_checkpoint_300.bin'
-    
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_latent_diffusion_expressive_low_lr/pose_diffusion_checkpoint_499.bin'
-    
-    # # speaker conditional vqvae
-    # # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_cond/pose_diffusion_checkpoint_350.bin'
-    ckpt_path  = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_low_lr/pose_diffusion_checkpoint_499.bin'
-    
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_vqvae_expressive_with_val_fixed/pose_diffusion_checkpoint_best.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_low_lr/pose_diffusion_checkpoint_499.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_lower_lr/pose_diffusion_checkpoint_350.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_low_lr_transwav/pose_diffusion_checkpoint_499.bin'
-    
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_diffusion_expressive_ori/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_low_lr_preseq/pose_diffusion_checkpoint_499.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_low_lr_lstm/pose_diffusion_checkpoint_450.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_vqvae_cond_300/pose_diffusion_checkpoint_499.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_vqvae_expressive_512length_256/pose_diffusion_checkpoint_best.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/fixed_paper_train_vqvae_expressive_fixed/pose_diffusion_checkpoint_best.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/fixed_paper_train_vqvae_expressive_latent_best/pose_diffusion_checkpoint_300.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_vqvae_expressive_512length_64/pose_diffusion_checkpoint_best.bin'
-    ckpt_path = '/home/tiger/nfs/workspace/checkpoints_c2g2_best/expressive/paper_train_latent_300_lower_lr/pose_diffusion_checkpoint_best.bin'
-    
-    # ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_diffusion_expressive_ori/pose_diffusion_checkpoint_499.bin'
-    
-    # best latent-diffusion
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/paper_train_latent_300_lower_lr/pose_diffusion_checkpoint_350.bin'
-    
-    # best vqvae
-    ckpt_path = '/home/tiger/nfs/workspace/DiffGesture/output/train_vqvae_expressive_v2/pose_diffusion_checkpoint_300.bin'
 
 
     # ai002 server: 
@@ -1312,12 +1272,5 @@ if __name__ == '__main__':
         ckpt_path = '/data/longbinji/checkpoints_c2g2_best/expressive/paper_train_latent_300_lower_lr/pose_diffusion_checkpoint_best.bin'
     elif mode_model == "vqvae":
         ckpt_path = '/data/longbinji/checkpoints_c2g2_best/expressive/train_vqvae_expressive_v2/pose_diffusion_checkpoint_best.bin'
-    
-    # best condvq
-
-
-    # ckpt_path = '/data/longbinji/DiffGesture/output/train_expressive_ori_rl/pose_diffusion_checkpoint_499.bin'
-    # ckpt_path = '/data/longbinji/checkpoints_c2g2_best/expressive/train_vqvae_expressive_v2/pose_diffusion_checkpoint_300.bin'
-    direct_rl = False
     
     main(mode, ckpt_path)
