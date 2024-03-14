@@ -2,7 +2,7 @@
 
 This is the official code for [**C2G2: Controllable Co-speech Gesture Generation**](https://arxiv.org/abs/2308.15016).
 
-[![arXiv](https://img.shields.io/badge/arXiv-2307.00024-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2308.15016)  [![githubio](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue?logo=Github&style=flat-square)](https://c2g2-gesture.github.io/c2_gesture/)
+[![arXiv](https://img.shields.io/badge/arXiv-2308.15016-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2308.15016)  [![githubio](https://img.shields.io/badge/GitHub.io-Demos-blue?logo=Github&style=flat-square)](https://c2g2-gesture.github.io/c2_gesture/)
 
 ## Abstract
 Co-speech gesture generation is crucial for automatic digital avatar animation. However, existing methods suffer from issues such as unstable training and temporal inconsistency, particularly in generating high-fidelity and comprehensive gestures. Additionally, these methods lack effective control over speaker identity and temporal editing of the generated gestures. Focusing on capturing temporal latent information and applying practical controlling, we propose a Controllable Co-speech Gesture Generation framework, named C2G2. Specifically, we propose a two-stage temporal dependency enhancement strategy motivated by latent diffusion models. We further introduce two key features to C2G2, namely a speaker-specific decoder to generate speaker-related real-length skeletons and a repainting strategy for flexible gesture generation/editing. Extensive experiments on benchmark gesture datasets verify the effectiveness of our proposed C2G2 compared with several state-of-the-art baselines.
